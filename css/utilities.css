@@ -1,0 +1,107 @@
+/* Variales */
+:root{
+    --primary-color: #28a745;
+    --secondary-color: #0284d0;
+    --dark-color: #333;
+    --light-color: #fff;
+}
+/* Text Colors */
+.text-primary{
+    color: var(--primary-color);
+}
+.text-secondary{
+    color: var(--secondary-color);
+}
+
+/* Button and Backgrounds*/
+.btn{
+    cursor:pointer;
+    display:inline-block;
+    padding: 10px 30px;
+    color: var(--light-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn:hover{
+    opacity: 0.92;
+}
+.btn-primary{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+.btn-secondary{
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+.btn-light{
+    background-color: var(--light-color);
+    color: var(--light-color);
+}
+.btn-dark{
+    background-color: var(--dark-color);
+    color: var(--dark-color)
+}
+.btn-transparent{
+    background-color: transparent;
+    color: var(--light-color);
+    border: 1px solid var(--light-color);
+}
+.btn-primary, .bg-primary{
+    color: var(--light-color);
+    background-color: var(--primary-color);
+}
+.btn-secondary, .bg-secondary{
+    color: var(--light-color);
+    background-color: var(--secondary-color);
+}
+
+/* Flex Item Styles */
+.flex-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+.flex-items>div{
+    padding: 20px;
+}
+
+/* Solutions Style */
+.flex-columns .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.flex-columns .column{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.flex-columns .column .column-1 ,
+.flex-columns .column .column-2{
+    height: 100%;
+}
+.flex-columns .column img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.flex-columns .column-2{
+    display: flex;
+    flex-direction: column;
+    align-items:  flex-start;
+    justify-content: center;
+    padding: 30px;
+} 
+.flex-columns h2{
+    font-size: 40px;
+    font-weight: 300;
+}
+.flex-columns p{
+    margin: 20px, 0px;
+}
